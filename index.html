@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GamerR3z Command List</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- Styles -->
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background: #1b1e24;
+            color: #fff;
+            font-size: 30px;
+            font-weight: 400;
+            font-style: normal;
+            font-family: "Roboto", helvetica, arial, sans-serif;
+            text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+            text-transform: uppercase;
+        }
+
+        .container {
+            width: 100vw;
+            background: #6441a5;
+            color: #fff;
+            margin: 15px 0;
+            padding: 20px 0;
+        }
+
+        div.table-title {
+            display: block;
+            margin: auto;
+            max-width: 600px;
+            padding: 5px;
+            width: 100%;
+        }
+
+        .table-title h3 {
+            color: #fafafa;
+            font-size: 30px;
+            font-weight: 400;
+            font-style: normal;
+            font-family: "Roboto", helvetica, arial, sans-serif;
+            text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+            text-transform: uppercase;
+        }
+
+
+        /*** Table Styles **/
+
+        .table-fill {
+            background: white;
+            border-radius: 3px;
+            border-collapse: collapse;
+            height: 320px;
+            margin: auto;
+            max-width: 600px;
+            padding: 5px;
+            width: 100%;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            animation: float 5s infinite;
+        }
+
+        th {
+            color: #D5DDE5;
+            ;
+            background: #1b1e24;
+            border-bottom: 4px solid #9ea7af;
+            border-right: 1px solid #343a45;
+            font-size: 23px;
+            font-weight: 100;
+            padding: 24px;
+            text-align: left;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            vertical-align: middle;
+        }
+
+        th:first-child {
+            border-top-left-radius: 3px;
+        }
+
+        th:last-child {
+            border-top-right-radius: 3px;
+            border-right: none;
+        }
+
+        tr {
+            border-top: 1px solid #C1C3D1;
+            border-bottom-: 1px solid #C1C3D1;
+            color: #666B85;
+            font-size: 16px;
+            font-weight: normal;
+            text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+        }
+
+        tr:hover td {
+            background: #4E5066;
+            color: #FFFFFF;
+            border-top: 1px solid #22262e;
+        }
+
+        tr:first-child {
+            border-top: none;
+        }
+
+        tr:last-child {
+            border-bottom: none;
+        }
+
+        tr:nth-child(odd) td {
+            background: #EBEBEB;
+        }
+
+        tr:nth-child(odd):hover td {
+            background: #4E5066;
+        }
+
+        tr:last-child td:first-child {
+            border-bottom-left-radius: 3px;
+        }
+
+        tr:last-child td:last-child {
+            border-bottom-right-radius: 3px;
+        }
+
+        td {
+            background: #FFFFFF;
+            padding: 20px;
+            text-align: left;
+            vertical-align: middle;
+            font-weight: 300;
+            font-size: 18px;
+            text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+            border-right: 1px solid #C1C3D1;
+        }
+
+        td:last-child {
+            border-right: 0px;
+        }
+
+        th.text-left {
+            text-align: left;
+        }
+
+        th.text-center {
+            text-align: center;
+        }
+
+        th.text-right {
+            text-align: right;
+        }
+
+        td.text-left {
+            text-align: left;
+        }
+
+        td.text-center {
+            text-align: center;
+        }
+
+        td.text-right {
+            text-align: right;
+        }
+
+
+        #header {
+            width: 100vw;
+            height: 100%;
+            text-align: center;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        .thead {
+            font-size: 30px;
+        }
+
+        #main {
+            width: 100vw;
+        }
+    </style>
+    <section id="header">
+        <h1>GamerR3z - Command List</h1>
+    </section>
+
+    <section id="main">
+                <!-- ### Begin New Table ### -->
+                <div class="container">
+                        <div class="table-title">
+                            <h3>Basic</h3>
+                        </div>
+                        <table class="table-fill">
+                            <thead>
+                                <tr>
+                                    <th class="text-left">Command</th>
+                                    <th class="text-left">Description</th>
+                                    <th class="text-left">Energy Cost</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-hover">
+                                <tr>
+                                    <td class="text-left">!uptime</td>
+                                    <td class="text-left">See how long the stream has been up.</td>
+                                    <td class="text-left">5</td>
+            
+                                </tr>
+            
+                                <tr>
+                                    <td class="text-left">!rip</td>
+                                    <td class="text-left">I have failed you.</td>
+                                    <td class="text-left">5</td>
+            
+                                </tr>
+            
+            
+                                <tr>
+                                    <td class="text-left">!powerup</td>
+                                    <td class="text-left">Mmm green mushrooms.</td>
+                                    <td class="text-left">5</td>
+            
+                                </tr>            
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- ### End New Table -->
+
+                                    <!-- ### Begin New Table ### -->
+                <div class="container">
+                        <div class="table-title">
+                            <h3>Games</h3>
+                        </div>
+                        <table class="table-fill">
+                            <thead>
+                                <tr>
+                                    <th class="text-left">Command</th>
+                                    <th class="text-left">Description</th>
+                                    <th class="text-left">Command Usage</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-hover">
+                                <tr>
+                                    <td class="text-left">!heist</td>
+                                    <td class="text-left">You and your allies take on the World Bank.</td>
+                                    <td class="text-left">!heist &#60;bet&#62;</td>
+            
+                                </tr>
+            
+                                <tr>
+                                    <td class="text-left">!challenge</td>
+                                    <td class="text-left">Challenge an opponent of your choice.</td>
+                                    <td class="text-left">!challenge &#60;twitch-name&#62;</td>
+            
+                                </tr>
+            
+            
+                                <tr>
+                                    <td class="text-left">!ffa</td>
+                                    <td class="text-left">There can be only one. Fight your chatters in the arena.</td>
+                                    <td class="text-left">!arena</td>
+            
+                                </tr>            
+            
+                                <tr>
+                                    <td class="text-left">!boss</td>
+                                    <td class="text-left">Beat the boss. Save the princess.</td>
+                                    <td class="text-left">!boss</td>
+            
+                                </tr>            
+               
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- ### End New Table -->
+            
+        <!-- ### Begin New Table ### -->
+        <div class="container">
+            <div class="table-title">
+                <h3>Anime</h3>
+            </div>
+            <table class="table-fill">
+                <thead>
+                    <tr>
+                        <th class="text-left">Command</th>
+                        <th class="text-left">Description</th>
+                        <th class="text-left">Energy Cost</th>
+                    </tr>
+                </thead>
+                <tbody class="table-hover">
+                    <tr>
+                        <td class="text-left">!9000</td>
+                        <td class="text-left">Its over 9000!!</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="text-left">!timetoduel</td>
+                        <td class="text-left">Its over 9000!!</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td class="text-left">!potato-chip</td>
+                        <td class="text-left">Its over 9000!!</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!kamahamaha</td>
+                        <td class="text-left">Its over 9000!!</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!-- ### End New Table -->
+
+        <!-- ### Begin New Table ### -->
+        <div class="container">
+            <div class="table-title">
+                <h3>Basic SFX</h3>
+            </div>
+            <table class="table-fill">
+                <thead>
+                    <tr>
+                        <th class="text-left">Command</th>
+                        <th class="text-left">Description</th>
+                        <th class="text-left">Energy Cost</th>
+                    </tr>
+                </thead>
+                <tbody class="table-hover">
+                    <tr>
+                        <td class="text-left">!badumtss</td>
+                        <td class="text-left">That's a knee slapper.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="text-left">!crickets</td>
+                        <td class="text-left">Don't quit your day job ..seriously.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td class="text-left">!drumroll</td>
+                        <td class="text-left">Its like waiting for the end of an infinite loop, except with like drums.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!easy</td>
+                        <td class="text-left">This command resulted in a lawsuit from Staples&trade;</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!hallelujah</td>
+                        <td class="text-left">Not the Shrek cover ..sorry.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!intruder</td>
+                        <td class="text-left">Time to go full Macaulay Culkin on 'em.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!losehorn</td>
+                        <td class="text-left">"Hey I've heard this call before" - Squarepants, Sponge 2006</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!sadtrombone</td>
+                        <td class="text-left">A moment of silence for all the Yoshis.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!tumbleweed</td>
+                        <td class="text-left">Way #11,479 to die in the West.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!whipit</td>
+                        <td class="text-left">Whip it good.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!wrongbuzz</td>
+                        <td class="text-left">The price is wrong, bitch.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        <!-- ### End New Table -->
+
+        <!-- ### Begin New Table ### -->
+        <div class="container">
+            <div class="table-title">
+                <h3>Memes</h3>
+            </div>
+            <table class="table-fill">
+                <thead>
+                    <tr>
+                        <th class="text-left">Command</th>
+                        <th class="text-left">Description</th>
+                        <th class="text-left">Energy Cost</th>
+                    </tr>
+                </thead>
+                <tbody class="table-hover">
+                    <tr>
+                        <td class="text-left">!cena</td>
+                        <td class="text-left" style="color:#EBEBEB">You can't see me.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="text-left">!damage</td>
+                        <td class="text-left">Dude, what's your damage?</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td class="text-left">!illuminati</td>
+                        <td class="text-left">Triangles everywhere.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!mlg</td>
+                        <td class="text-left">I wake up in the morning and piss excellence.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!notimeforthat</td>
+                        <td class="text-left">Bots have things to do too. </td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!bestwords</td>
+                        <td class="text-left">Hint: Most of them can't be said on live television.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!douknodaewae</td>
+                        <td class="text-left">My bruddah.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!trollol</td>
+                        <td class="text-left">You gotta pay the troll toll.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!smokeweed</td>
+                        <td class="text-left">D.A.R.E</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- ### End New Table -->
+
+        <!-- ### Begin New Table ### -->
+        <div class="container">
+            <div class="table-title">
+                <h3>Movies</h3>
+            </div>
+            <table class="table-fill">
+                <thead>
+                    <tr>
+                        <th class="text-left">Command</th>
+                        <th class="text-left">Description</th>
+                        <th class="text-left">Energy Cost</th>
+                    </tr>
+                </thead>
+                <tbody class="table-hover">
+                    <tr>
+                        <td class="text-left">!gettodachoppa</td>
+                        <td class="text-left">Only if you want to live. If you want to die, go left.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="text-left">!dinosaurs</td>
+                        <td class="text-left">rawrrrrr xD :3</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td class="text-left">!jaws</td>
+                        <td class="text-left">We're gonna need a bigger boat. 🦈</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!kungfu</td>
+                        <td class="text-left">Hyaaaaa</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!magicword</td>
+                        <td class="text-left">You can't buy a vowel.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!onebigpile</td>
+                        <td class="text-left">I'm not touching that one.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!unodie</td>
+                        <td class="text-left">Uno is doing its best, okay?! :'(</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!ulose</td>
+                        <td class="text-left">Captain Obvious</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!bees</td>
+                        <td class="text-left">Bitch better have my honey.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!vaderno</td>
+                        <td class="text-left">*insert heavy breathing*</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!ysoserious</td>
+                        <td class="text-left">Wanna know how I got these scars?</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!jokermessage</td>
+                        <td class="text-left">Joker can't come to the phone at the moment. *beep*</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- ### End New Table -->
+        <!-- ### Begin New Table ### -->
+        <div class="container">
+            <div class="table-title">
+                <h3>Music</h3>
+            </div>
+            <table class="table-fill">
+                <thead>
+                    <tr>
+                        <th class="text-left">Command</th>
+                        <th class="text-left">Description</th>
+                        <th class="text-left">Energy Cost</th>
+                    </tr>
+                </thead>
+                <tbody class="table-hover">
+                    <tr>
+                        <td class="text-left">!darkness</td>
+                        <td class="text-left">I believe in a thing called love (justlistentotherhythmofmahheart)</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="text-left">!sexysax</td>
+                        <td class="text-left">I'm a sax man.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td class="text-left">!spooky</td>
+                        <td class="text-left">Don't forget your brown pants.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!yeahh</td>
+                        <td class="text-left">Okayyyy</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!-- ### End New Table -->
+        <!-- ### Begin New Table ### -->
+        <div class="container">
+            <div class="table-title">
+                <h3>Video Games</h3>
+            </div>
+            <table class="table-fill">
+                <thead>
+                    <tr>
+                        <th class="text-left">Command</th>
+                        <th class="text-left">Description</th>
+                        <th class="text-left">Energy Cost</th>
+                    </tr>
+                </thead>
+                <tbody class="table-hover">
+                    <tr>
+                        <td class="text-left">!cyabowser</td>
+                        <td class="text-left">Bye felicia</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="text-left">!finishhim</td>
+                        <td class="text-left">NSFW</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td class="text-left">!gamecube</td>
+                        <td class="text-left">N64&sup2;</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!herewego</td>
+                        <td class="text-left">Where you going?</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!imissed</td>
+                        <td class="text-left">Then I missed, so I shot him a second time. I missed.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!metalgear</td>
+                        <td class="text-left">is much heavier than plastic gear.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!pills</td>
+                        <td class="text-left">Red or Blue?</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!ps1</td>
+                        <td class="text-left">Nostalgia Engaged</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!yes</td>
+                        <td class="text-left">- Jim Carrey 2011</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!fatality</td>
+                        <td class="text-left">You've lost your head.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!listen</td>
+                        <td class="text-left">Hey!</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!getitem</td>
+                        <td class="text-left">That's an awfully shiny chest for a compass.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!ff7victory</td>
+                        <td class="text-left">We are the champions.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!barrelroll</td>
+                        <td class="text-left">&#729;&#654;zz&#7433;p &#387;u&#7433;&#647;&#647;&#477;&#387; &#623;,I</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!-- ### End New Table -->
+        <!-- ### Begin New Table ### -->
+        <div class="container">
+            <div class="table-title">
+                <h3>Television</h3>
+            </div>
+            <table class="table-fill">
+                <thead>
+                    <tr>
+                        <th class="text-left">Command</th>
+                        <th class="text-left">Description</th>
+                        <th class="text-left">Energy Cost</th>
+                    </tr>
+                </thead>
+                <tbody class="table-hover">
+                    <tr>
+                        <td class="text-left">!chocolate</td>
+                        <td class="text-left">You're selling chocolates?!</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="text-left">!hoopla</td>
+                        <td class="text-left">The secret ingredient is krab.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td class="text-left">!myleg</td>
+                        <td class="text-left">Moment of silence for leg guy..</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!myman</td>
+                        <td class="text-left">Looking good.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!needit</td>
+                        <td class="text-left">I don't need it.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!peterpark</td>
+                        <td class="text-left">is definitely not spiderman.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!picklerick</td>
+                        <td class="text-left">I'm pickle rick!</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!whocares</td>
+                        <td class="text-left">Omg, who the hell cares.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!wubbalubba</td>
+                        <td class="text-left">Help me..</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!shakedatass</td>
+                        <td class="text-left">I'm Mr. Bulldog.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!excusemeprincess</td>
+                        <td class="text-left">Why don't you go sleep in another castle.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!dothat</td>
+                        <td class="text-left">Or don't, Its just a suggestion.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!screwyouguys</td>
+                        <td class="text-left">I'm going home.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!tallen</td>
+                        <td class="text-left">I'm Mr. Bulldog.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!-- ### End New Table -->
+        <!-- ### Begin New Table ### -->
+        <div class="container">
+            <div class="table-title">
+                <h3>Youtubers</h3>
+            </div>
+            <table class="table-fill">
+                <thead>
+                    <tr>
+                        <th class="text-left">Command</th>
+                        <th class="text-left">Description</th>
+                        <th class="text-left">Energy Cost</th>
+                    </tr>
+                </thead>
+                <tbody class="table-hover">
+                    <tr>
+                        <td class="text-left">!ass</td>
+                        <td class="text-left">Well this could really be anything, couldn't it?</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="text-left">!shitthefuck</td>
+                        <td class="text-left">AVGN</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td class="text-left">!deadyet</td>
+                        <td class="text-left">Nope.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!favorite</td>
+                        <td class="text-left">I use that term loosely.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!nope</td>
+                        <td class="text-left">- Not Jim Carrey, 2011</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!wutdafuk</td>
+                        <td class="text-left">Whiskey Tango Foxtrot</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- ### End New Table -->
+        <!-- ### Begin New Table ### -->
+        <div class="container">
+            <div class="table-title">
+                <h3>Social Commands</h3>
+            </div>
+            <table class="table-fill">
+                <thead>
+                    <tr>
+                        <th class="text-left">Command</th>
+                        <th class="text-left">Description</th>
+                        <th class="text-left">Energy Cost</th>
+                    </tr>
+                </thead>
+                <tbody class="table-hover">
+                    <tr>
+                        <td class="text-left">!discord</td>
+                        <td class="text-left"><a href="#">Join our Discord.</a></td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="text-left">!twitter</td>
+                        <td class="text-left">@gamerrez</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- ### End New Table -->
+        <!-- ### Begin New Table ### -->
+        <div class="container">
+            <div class="table-title">
+                <h3></h3>
+            </div>
+            <table class="table-fill">
+                <thead>
+                    <tr>
+                        <th class="text-left">Command</th>
+                        <th class="text-left">Description</th>
+                        <th class="text-left">Energy Cost</th>
+                    </tr>
+                </thead>
+                <tbody class="table-hover">
+                    <tr>
+                        <td class="text-left">!darkness</td>
+                        <td class="text-left">I believe in a thing called love (justlistentotherhythmofmahheart)</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="text-left">!sexysax</td>
+                        <td class="text-left">I'm a sax man.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td class="text-left">!spooky</td>
+                        <td class="text-left">Don't forget your brown pants.</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">!yeahh</td>
+                        <td class="text-left">Okayyyy</td>
+                        <td class="text-left">5</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!-- ### End New Table -->
+
+
+    </section>
+</body>
+
+</html>
